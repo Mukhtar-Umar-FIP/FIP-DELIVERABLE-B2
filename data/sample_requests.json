@@ -1,0 +1,96 @@
+[
+  {
+    "id": "REQ001",
+    "name": "Amina Bello",
+    "email": "amina.bello@example.com",
+    "issue": "Cannot log in to my account after password reset.",
+    "date": "2026-10-01",
+    "priority": "High",
+    "status": "Open",
+    "replies": [
+      "Customer: I reset my password but it still says invalid.",
+      "Agent: Please clear your browser cache and try again.",
+      "Customer: Still not working."
+    ]
+  },
+  {
+    "id": "REQ002",
+    "name": "John Okafor",
+    "email": "john.okafor@example.com",
+    "issue": "I was charged twice for my last order.",
+    "date": "2026-10-02",
+    "priority": "High",
+    "status": "In Progress",
+    "replies": [
+      "Agent: We are checking with the payments team."
+    ]
+  },
+  {
+    "id": "REQ003",
+    "name": "Grace Adeyemi",
+    "email": "grace.adeyemi@example.com",
+    "issue": "How do I change my delivery address?",
+    "date": "2026-10-03",
+    "priority": "Low",
+    "status": "Resolved",
+    "replies": [
+      "Agent: Go to Settings > Addresses and click Edit.",
+      "Customer: Done, thank you!"
+    ]
+  },
+  {
+    "id": "REQ004",
+    "name": "Musa Ibrahim",
+    "email": "musa.ibrahim@example.com",
+    "issue": "The mobile app crashes when I open my orders page.",
+    "date": "2026-10-04",
+    "priority": "Normal",
+    "status": "Open",
+    "replies": []
+  },
+  {
+    "id": "REQ005",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@example.com",
+    "issue": "My parcel shows delivered but I have not received it.",
+    "date": "2026-10-05",
+    "priority": "Normal",
+    "status": "Open",
+    "replies": [
+      "Customer: The tracking says it was left at the door."
+    ]
+  },
+  {
+    "id": "REQ006",
+    "name": "David Eze",
+    "email": "david.eze@example.com",
+    "issue": "Please cancel my subscription.",
+    "date": "2026-10-06",
+    "priority": "Low",
+    "status": "Open",
+    "replies": []
+  },
+  {
+    "id": "REQ007",
+    "name": "Fatima Yusuf",
+    "email": "fatima.yusuf@example.com",
+    "issue": "Discount code SAVE10 is not working at checkout.",
+    "date": "2026-10-07",
+    "priority": "Normal",
+    "status": "In Progress",
+    "replies": [
+      "Agent: The code expired on 30 September.",
+      "Customer: Can I get a new one?"
+    ]
+  },
+  {
+    "id": "REQ008",
+    "name": "Amina Bello",
+    "email": "amina.bello@example.com",
+    "issue": "I want to update the phone number on my account.",
+    "date": "2026-10-08",
+    "priority": "Low",
+    "status": "Open",
+    "replies": []
+  }
+]
