@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request {{ req.id }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <p><a href="/">&larr; Back to all requests</a></p>
+    <h1>Request {{ req.id }}</h1>
+
+    <section class="box">
+        <p><strong>Customer:</strong> {{ req.customer.name }} ({{ req.customer.email }})</p>
+        <p><strong>Issue:</strong> {{ req.issue }}</p>
+        <p><strong>Date:</strong> {{ req.date }}</p>
+        <p><strong>Priority:</strong> <span class="priority-{{ req.priority }}">{{ req.priority }}</span></p>
+        <p><strong>Status:</strong> {{ req.status }}</p>
+    </section>
+
+    <section class="box">
+        <h2>Replies and Follow-ups</h2>
+        <!-- These lines were built by the recursive show_replies() function -->
+        {% if reply_lines %}
+            {% for line in reply_lines %}
+            <p class="reply">{{ line }}</p>
+            {% endfor %}
+        {% else %}
+            <p>No replies yet.</p>
+        {% endif %}
+
+        <form action="/reply/{{ req.id }}" method="post">
+            <label>Add a reply <textarea name="message" required placeholder="Agent: ..."></textarea></label>
+            <button type="submit">Add Reply</button>
+        </form>
+    </section>
+</body>
+</html>

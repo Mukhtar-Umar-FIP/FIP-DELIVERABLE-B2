@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f6f8;
+    color: #222;
+}
+
+h1 {
+    color: #1f4e79;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.row .box {
+    flex: 1;
+    min-width: 280px;
+}
+
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.inline input, .inline select {
+    width: auto;
+}
+
+button {
+    background: #1f4e79;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #163a5c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #e8eef4;
+}
+
+.message {
+    background: #fff3cd;
+    border: 1px solid #ffe08a;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.priority-High {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.priority-Low {
+    color: #777;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.reply {
+    background: #f0f4f8;
+    padding: 8px;
+    border-left: 4px solid #1f4e79;
+}
